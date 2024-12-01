@@ -15,19 +15,23 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.me.minecraft_blackjack.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(blackjack.MODID)
 public class blackjack
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "miniecraft_blackjack";
+    public static final String MODID = "minecraft_blackjack";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public blackjack(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -51,7 +55,10 @@ public class blackjack
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ModItems.CARD_ACE_OF_HEARTS);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
