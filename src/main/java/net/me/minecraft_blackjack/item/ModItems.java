@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, blackjack.MODID);
 
-    public static final RegistryObject<Item> CARD_ACE_OF_HEARTS = ITEMS.register("ace of hearts", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_ACE_OF_HEARTS = ITEMS.register("ace_of_hearts", () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus)
