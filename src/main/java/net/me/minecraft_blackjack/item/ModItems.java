@@ -39,6 +39,34 @@ public class ModItems {
     public static final RegistryObject<Item> CARD_QUEEN_OF_DIAMONDS = ITEMS.register("queen_of_diamonds", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CARD_KING_OF_DIAMONDS = ITEMS.register("king_of_diamonds", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> CARD_ACE_OF_CLUBS = ITEMS.register("ace_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_TWO_OF_CLUBS = ITEMS.register("two_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_THREE_OF_CLUBS = ITEMS.register("three_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_FOUR_OF_CLUBS = ITEMS.register("four_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_FIVE_OF_CLUBS = ITEMS.register("five_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_SIX_OF_CLUBS = ITEMS.register("six_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_SEVEN_OF_CLUBS = ITEMS.register("seven_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_EIGHT_OF_CLUBS = ITEMS.register("eight_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_NINE_OF_CLUBS = ITEMS.register("nine_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_TEN_OF_CLUBS = ITEMS.register("ten_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_JACK_OF_CLUBS = ITEMS.register("jack_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_QUEEN_OF_CLUBS = ITEMS.register("queen_of_clubs", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_KING_OF_CLUBS = ITEMS.register("king_of_clubs", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CARD_ACE_OF_SPADES = ITEMS.register("ace_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_TWO_OF_SPADES = ITEMS.register("two_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_THREE_OF_SPADES = ITEMS.register("three_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_FOUR_OF_SPADES = ITEMS.register("four_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_FIVE_OF_SPADES = ITEMS.register("five_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_SIX_OF_SPADES = ITEMS.register("six_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_SEVEN_OF_SPADES = ITEMS.register("seven_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_EIGHT_OF_SPADES = ITEMS.register("eight_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_NINE_OF_SPADES = ITEMS.register("nine_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_TEN_OF_SPADES = ITEMS.register("ten_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_JACK_OF_SPADES = ITEMS.register("jack_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_QUEEN_OF_SPADES = ITEMS.register("queen_of_spades", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARD_KING_OF_SPADES = ITEMS.register("king_of_spades", () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus)
     {
         ITEMS.register(eventBus);
