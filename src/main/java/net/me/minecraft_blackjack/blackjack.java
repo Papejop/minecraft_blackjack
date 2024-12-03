@@ -71,6 +71,21 @@ public class blackjack
             event.accept(ModItems.CARD_JACK_OF_HEARTS);
             event.accept(ModItems.CARD_QUEEN_OF_HEARTS);
             event.accept(ModItems.CARD_KING_OF_HEARTS);
+
+            event.accept(ModItems.CARD_ACE_OF_DIAMONDS);
+            event.accept(ModItems.CARD_TWO_OF_DIAMONDS);
+            event.accept(ModItems.CARD_THREE_OF_DIAMONDS);
+            event.accept(ModItems.CARD_FOUR_OF_DIAMONDS);
+            event.accept(ModItems.CARD_FIVE_OF_DIAMONDS);
+            event.accept(ModItems.CARD_SIX_OF_DIAMONDS);
+            event.accept(ModItems.CARD_SEVEN_OF_DIAMONDS);
+            event.accept(ModItems.CARD_EIGHT_OF_DIAMONDS);
+            event.accept(ModItems.CARD_NINE_OF_DIAMONDS);
+            event.accept(ModItems.CARD_TEN_OF_DIAMONDS);
+            event.accept(ModItems.CARD_JACK_OF_DIAMONDS);
+            event.accept(ModItems.CARD_QUEEN_OF_DIAMONDS);
+            event.accept(ModItems.CARD_KING_OF_DIAMONDS);
+            
         }
     }
 

@@ -11,5 +11,19 @@
     "item.minecraft_blackjack.ten_of_hearts": "ten of hearts",
     "item.minecraft_blackjack.jack_of_hearts": "jack of hearts",
     "item.minecraft_blackjack.queen_of_hearts": "queen of hearts",
-    "item.minecraft_blackjack.king_of_hearts": "king of hearts"
+    "item.minecraft_blackjack.king_of_hearts": "king of hearts",
+
+    "item.minecraft_blackjack.ace_of_diamonds": "ace of diamonds",
+    "item.minecraft_blackjack.two_of_diamonds": "two of diamonds",
+    "item.minecraft_blackjack.three_of_diamonds": "three of diamonds",
+    "item.minecraft_blackjack.four_of_diamonds": "four of diamonds",
+    "item.minecraft_blackjack.five_of_diamonds": "five of diamonds",
+    "item.minecraft_blackjack.six_of_diamonds": "six of diamonds",
+    "item.minecraft_blackjack.seven_of_diamonds": "seven of diamonds",
+    "item.minecraft_blackjack.eight_of_diamonds": "eight of diamonds",
+    "item.minecraft_blackjack.nine_of_diamonds": "nine of diamonds",
+    "item.minecraft_blackjack.ten_of_diamonds": "ten of diamonds",
+    "item.minecraft_blackjack.jack_of_diamonds": "jack of diamonds",
+    "item.minecraft_blackjack.queen_of_diamonds": "queen of diamonds",
+    "item.minecraft_blackjack.king_of_diamonds": "king of diamonds"
 }
