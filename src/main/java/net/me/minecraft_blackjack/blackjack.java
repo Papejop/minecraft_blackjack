@@ -1,9 +1,7 @@
 package net.me.minecraft_blackjack;
 
 import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.me.minecraft_blackjack.item.ModItems;
+import net.me.minecraft_blackjack.item.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -30,6 +29,8 @@ public class blackjack
     public blackjack(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
