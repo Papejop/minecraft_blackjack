@@ -21,6 +21,18 @@ public class ModCreativeModeTabs {
         .title(Component.translatable("blackjack"))
         .displayItems((pParameters, pOutput) -> {
             pOutput.accept(ModItems.CARD_ACE_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_TWO_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_THREE_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_FOUR_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_FIVE_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_SIX_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_SEVEN_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_EIGHT_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_NINE_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_TEN_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_JACK_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_QUEEN_OF_HEARTS.get());
+            pOutput.accept(ModItems.CARD_KING_OF_HEARTS.get());
         })
         .build());
 

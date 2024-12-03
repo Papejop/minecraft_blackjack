@@ -1,3 +1,15 @@
 {
-    "item.minecraft_blackjack.ace_of_hearts": "ace of hearts"
+    "item.minecraft_blackjack.ace_of_hearts": "ace of hearts",
+    "item.minecraft_blackjack.two_of_hearts": "two of hearts",
+    "item.minecraft_blackjack.three_of_hearts": "three of hearts",
+    "item.minecraft_blackjack.four_of_hearts": "four of hearts",
+    "item.minecraft_blackjack.five_of_hearts": "five of hearts",
+    "item.minecraft_blackjack.six_of_hearts": "six of hearts",
+    "item.minecraft_blackjack.seven_of_hearts": "seven of hearts",
+    "item.minecraft_blackjack.eight_of_hearts": "eight of hearts",
+    "item.minecraft_blackjack.nine_of_hearts": "nine of hearts",
+    "item.minecraft_blackjack.ten_of_hearts": "ten of hearts",
+    "item.minecraft_blackjack.jack_of_hearts": "jack of hearts",
+    "item.minecraft_blackjack.queen_of_hearts": "queen of hearts",
+    "item.minecraft_blackjack.king_of_hearts": "king of hearts"
 }
