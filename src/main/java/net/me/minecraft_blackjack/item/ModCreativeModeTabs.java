@@ -8,8 +8,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
- 
-
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, blackjack.MODID);
@@ -75,7 +73,6 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModItems.CARD_JACK_OF_SPADES.get());
             pOutput.accept(ModItems.CARD_QUEEN_OF_SPADES.get());
             pOutput.accept(ModItems.CARD_KING_OF_SPADES.get());
-
         })
         .build());
 

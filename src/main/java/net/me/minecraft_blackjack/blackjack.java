@@ -16,8 +16,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.me.minecraft_blackjack.item.ModItems;
 import net.me.minecraft_blackjack.item.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.me.minecraft_blackjack.block.ModBlocks;
 
-// The value here should match an entry in the META-INF/mods.toml file
+// The value here should match an entry in the META-INF/mods.toml file+
 @Mod(blackjack.MODID)
 public class blackjack
 {
@@ -33,6 +34,7 @@ public class blackjack
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
