@@ -53,5 +53,10 @@
     "item.minecraft_blackjack.ten_of_spades": "ten of spades",
     "item.minecraft_blackjack.jack_of_spades": "jack of spades",
     "item.minecraft_blackjack.queen_of_spades": "queen of spades",
-    "item.minecraft_blackjack.king_of_spades": "king of spades"
+    "item.minecraft_blackjack.king_of_spades": "king of spades",
+
+    "item.minecraft_blackjack.chip_10": "The 10 Chip",
+    "item.minecraft_blackjack.chip_20": "The 20 Chip",
+    "item.minecraft_blackjack.chip_50": "The 50 Chip",
+    "item.minecraft_blackjack.chip_100": "The 100 Chip"
 }

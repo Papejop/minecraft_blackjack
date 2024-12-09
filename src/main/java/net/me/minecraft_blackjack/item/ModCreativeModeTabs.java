@@ -73,6 +73,11 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModItems.CARD_JACK_OF_SPADES.get());
             pOutput.accept(ModItems.CARD_QUEEN_OF_SPADES.get());
             pOutput.accept(ModItems.CARD_KING_OF_SPADES.get());
+
+            pOutput.accept(ModItems.CHIP_10.get());
+            pOutput.accept(ModItems.CHIP_20.get());
+            pOutput.accept(ModItems.CHIP_50.get());
+            pOutput.accept(ModItems.CHIP_100.get());
         })
         .build());
 
