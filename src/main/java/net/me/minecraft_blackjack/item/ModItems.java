@@ -72,11 +72,11 @@ public class ModItems {
     public static final RegistryObject<Item> CHIP_10 = ITEMS.register("chip_10", () -> new Item(new Item.Properties()
             .stacksTo(64)));
     public static final RegistryObject<Item> CHIP_20 = ITEMS.register("chip_20", () -> new Item(new Item.Properties()
-            .stacksTo(16)));
+            .stacksTo(64)));
     public static final RegistryObject<Item> CHIP_50 = ITEMS.register("chip_50", () -> new Item(new Item.Properties()
-            .stacksTo(16)));
+            .stacksTo(64)));
     public static final RegistryObject<Item> CHIP_100 = ITEMS.register("chip_100", () -> new Item(new Item.Properties()
-                .stacksTo(16)));
+                .stacksTo(64)));
 
     public static void register(IEventBus eventBus)
     {
