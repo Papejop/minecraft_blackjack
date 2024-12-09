@@ -19,7 +19,7 @@ import net.me.minecraft_blackjack.block.custom.BlackJackPlayerTable;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, blackjack.MODID);
 
-
+    //papejo sucks
     public static final RegistryObject<Block> BLACKJACK_PLAYER_TABLE = registerBlock("blackjack_player_table", 
         () -> new BlackJackPlayerTable(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
 
