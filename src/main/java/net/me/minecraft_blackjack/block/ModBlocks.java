@@ -3,6 +3,8 @@ package net.me.minecraft_blackjack.block;
 import java.util.function.Supplier;
 
 import net.me.minecraft_blackjack.blackjack;
+
+import net.me.minecraft_blackjack.block.custom.BlackJackPlayerChair;
 import net.me.minecraft_blackjack.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,11 +24,13 @@ public class ModBlocks {
     //papejo sucks
     public static final RegistryObject<Block> BLACKJACK_PLAYER_TABLE = registerBlock("blackjack_player_table", 
         () -> new BlackJackPlayerTable(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> BLACKJACK_PLAYER_CHAIR = registerBlock("blackjack_player_chair",
+            () -> new BlackJackPlayerChair(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn); 
+        registerBlockItem(name, toReturn);
         return toReturn;
     }
     

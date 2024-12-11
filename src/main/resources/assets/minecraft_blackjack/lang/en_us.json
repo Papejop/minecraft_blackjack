@@ -58,5 +58,7 @@
     "item.minecraft_blackjack.chip_10": "The 10 Chip",
     "item.minecraft_blackjack.chip_20": "The 20 Chip",
     "item.minecraft_blackjack.chip_50": "The 50 Chip",
-    "item.minecraft_blackjack.chip_100": "The 100 Chip"
+    "item.minecraft_blackjack.chip_100": "The 100 Chip",
+
+    "block.minecraft_blackjack.blackjack_player_chair": "Player Chair"
 }

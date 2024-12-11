@@ -120,6 +120,8 @@ public class blackjack
             event.accept(ModItems.CHIP_20);
             event.accept(ModItems.CHIP_50);
             event.accept(ModItems.CHIP_100);
+
+            event.accept(ModBlocks.BLACKJACK_PLAYER_CHAIR);
         }
     }
 
