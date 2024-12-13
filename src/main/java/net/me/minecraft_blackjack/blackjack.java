@@ -115,6 +115,13 @@ public class blackjack
             event.accept(ModItems.CARD_JACK_OF_SPADES);
             event.accept(ModItems.CARD_QUEEN_OF_SPADES);
             event.accept(ModItems.CARD_KING_OF_SPADES);
+
+            event.accept(ModItems.CHIP_10);
+            event.accept(ModItems.CHIP_20);
+            event.accept(ModItems.CHIP_50);
+            event.accept(ModItems.CHIP_100);
+
+            event.accept(ModBlocks.BLACKJACK_PLAYER_CHAIR);
         }
     }
 

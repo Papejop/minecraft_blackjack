@@ -1,6 +1,7 @@
 package net.me.minecraft_blackjack.item;
 
 import net.me.minecraft_blackjack.blackjack;
+import net.me.minecraft_blackjack.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +19,7 @@ public class ModCreativeModeTabs {
         .icon(() -> new ItemStack(ModItems.CARD_ACE_OF_HEARTS.get()))
         .title(Component.translatable("blackjack"))
         .displayItems((pParameters, pOutput) -> {
+        //cards
             pOutput.accept(ModItems.CARD_ACE_OF_HEARTS.get());
             pOutput.accept(ModItems.CARD_TWO_OF_HEARTS.get());
             pOutput.accept(ModItems.CARD_THREE_OF_HEARTS.get());
@@ -73,6 +75,14 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModItems.CARD_JACK_OF_SPADES.get());
             pOutput.accept(ModItems.CARD_QUEEN_OF_SPADES.get());
             pOutput.accept(ModItems.CARD_KING_OF_SPADES.get());
+        //chips
+            pOutput.accept(ModItems.CHIP_10.get());
+            pOutput.accept(ModItems.CHIP_20.get());
+            pOutput.accept(ModItems.CHIP_50.get());
+            pOutput.accept(ModItems.CHIP_100.get());
+        //custom blocks
+            pOutput.accept(ModBlocks.BLACKJACK_PLAYER_CHAIR.get());
+
         })
         .build());
 

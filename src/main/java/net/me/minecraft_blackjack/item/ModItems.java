@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, blackjack.MODID);
 
+    //cards
     public static final RegistryObject<Item> CARD_ACE_OF_HEARTS = ITEMS.register("ace_of_hearts", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CARD_TWO_OF_HEARTS = ITEMS.register("two_of_hearts", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CARD_THREE_OF_HEARTS = ITEMS.register("three_of_hearts", () -> new Item(new Item.Properties()));
@@ -66,6 +67,16 @@ public class ModItems {
     public static final RegistryObject<Item> CARD_JACK_OF_SPADES = ITEMS.register("jack_of_spades", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CARD_QUEEN_OF_SPADES = ITEMS.register("queen_of_spades", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CARD_KING_OF_SPADES = ITEMS.register("king_of_spades", () -> new Item(new Item.Properties()));
+
+    //chips
+    public static final RegistryObject<Item> CHIP_10 = ITEMS.register("chip_10", () -> new Item(new Item.Properties()
+            .stacksTo(64)));
+    public static final RegistryObject<Item> CHIP_20 = ITEMS.register("chip_20", () -> new Item(new Item.Properties()
+            .stacksTo(64)));
+    public static final RegistryObject<Item> CHIP_50 = ITEMS.register("chip_50", () -> new Item(new Item.Properties()
+            .stacksTo(64)));
+    public static final RegistryObject<Item> CHIP_100 = ITEMS.register("chip_100", () -> new Item(new Item.Properties()
+                .stacksTo(64)));
 
     public static void register(IEventBus eventBus)
     {
