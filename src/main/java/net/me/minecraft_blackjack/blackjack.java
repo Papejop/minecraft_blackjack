@@ -17,6 +17,7 @@ import net.me.minecraft_blackjack.item.ModItems;
 import net.me.minecraft_blackjack.item.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.me.minecraft_blackjack.block.ModBlocks;
+import net.me.minecraft_blackjack.block.entity.ModBlockEntities;
 
 // The value here should match an entry in the META-INF/mods.toml file+
 @Mod(blackjack.MODID)
@@ -35,6 +36,8 @@ public class blackjack
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -115,6 +118,13 @@ public class blackjack
             event.accept(ModItems.CARD_JACK_OF_SPADES);
             event.accept(ModItems.CARD_QUEEN_OF_SPADES);
             event.accept(ModItems.CARD_KING_OF_SPADES);
+
+            event.accept(ModItems.CHIP_10);
+            event.accept(ModItems.CHIP_20);
+            event.accept(ModItems.CHIP_50);
+            event.accept(ModItems.CHIP_100);
+
+            event.accept(ModBlocks.BLACKJACK_PLAYER_CHAIR);
         }
     }
 

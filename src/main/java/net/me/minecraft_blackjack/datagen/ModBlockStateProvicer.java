@@ -1,12 +1,13 @@
 package net.me.minecraft_blackjack.datagen;
 
 import net.me.minecraft_blackjack.blackjack;
+import net.me.minecraft_blackjack.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
-import net.minecraft.world.level.block.Block;
-import net.me.minecraft_blackjack.block.ModBlocks;
 
 public class ModBlockStateProvicer extends BlockStateProvider {
     public ModBlockStateProvicer(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -15,7 +16,8 @@ public class ModBlockStateProvicer extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        // TODO Auto-generated method stub
+        simpleBlock(ModBlocks.BLACKJACK_PLAYER_TABLE.get(),
+            new ModelFile.UncheckedModelFile(modLoc("block/blackjack_player_table")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
