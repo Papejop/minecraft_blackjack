@@ -15,10 +15,10 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.block.RenderShape;
 
-public class BlackJackPlayerTable extends BaseEntityBlock {
+public class BlackJackPlayerTableBlock extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 13, 16);
    
-    public BlackJackPlayerTable(Properties pProperties) {
+    public BlackJackPlayerTableBlock(Properties pProperties) {
         super(pProperties);
     }
 
@@ -39,7 +39,7 @@ public class BlackJackPlayerTable extends BaseEntityBlock {
     }
 
     @Override
-    public MapCodec<BlackJackPlayerTable> codec() {
+    public MapCodec<BlackJackPlayerTableBlock> codec() {
         // Return the codec for your custom block
         return MapCodec.unit(this);
     }
