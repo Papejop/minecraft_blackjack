@@ -9,12 +9,11 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class BlackJackPlayerTableBlockEntity extends BlockEntity implements MenuProvider {
-    public BlackJackPlayerTableBlockEntity(BlockEntityType<?> pType, BlockPos pPos, BlockState pBlockState) {
-        super(pType, pPos, pBlockState);
+    public BlackJackPlayerTableBlockEntity(BlockPos pPos, BlockState pBlockState) {
+        super(ModBlockEntities.BJ_PlAYER_TABLE_BE.get(), pPos, pBlockState);
     }
 
     @Override
