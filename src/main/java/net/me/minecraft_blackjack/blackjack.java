@@ -1,5 +1,8 @@
 package net.me.minecraft_blackjack;
 
+import net.me.minecraft_blackjack.entity.ModEntities;
+import net.me.minecraft_blackjack.renderer.custom.BlackJackPlayerChairRenderer;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -35,12 +38,14 @@ public class blackjack
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
 
+
+        modEventBus.addListener(this::registerRenderers);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -127,6 +132,10 @@ public class blackjack
         }
     }
 
+    @SubscribeEvent
+    public void registerRenderers(EntityRenderersEvent.RegisterRenderers event){
+        event.registerEntityRenderer(ModEntities.BLACKJACK_PLAYER_CHAIR_ENTITY.get(), BlackJackPlayerChairRenderer::new);
+    }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
