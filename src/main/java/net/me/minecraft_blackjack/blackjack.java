@@ -18,7 +18,6 @@ import net.me.minecraft_blackjack.item.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.me.minecraft_blackjack.block.ModBlocks;
 import net.me.minecraft_blackjack.block.entity.ModBlockEntities;
-
 // The value here should match an entry in the META-INF/mods.toml file+
 @Mod(blackjack.MODID)
 public class blackjack
@@ -26,7 +25,7 @@ public class blackjack
     // Define mod id in a common place for everything to reference
     public static final String MODID = "minecraft_blackjack";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public blackjack(FMLJavaModLoadingContext context)
     {
