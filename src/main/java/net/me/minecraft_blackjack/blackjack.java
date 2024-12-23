@@ -1,5 +1,8 @@
 package net.me.minecraft_blackjack;
 
+import net.me.minecraft_blackjack.entity.ModEntities;
+import net.me.minecraft_blackjack.renderer.custom.BlackJackPlayerChairRenderer;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -18,7 +21,6 @@ import net.me.minecraft_blackjack.item.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.me.minecraft_blackjack.block.ModBlocks;
 import net.me.minecraft_blackjack.block.entity.ModBlockEntities;
-
 // The value here should match an entry in the META-INF/mods.toml file+
 @Mod(blackjack.MODID)
 public class blackjack
@@ -26,7 +28,7 @@ public class blackjack
     // Define mod id in a common place for everything to reference
     public static final String MODID = "minecraft_blackjack";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public blackjack(FMLJavaModLoadingContext context)
     {
@@ -36,12 +38,14 @@ public class blackjack
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
 
+
+        modEventBus.addListener(this::registerRenderers);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -128,6 +132,10 @@ public class blackjack
         }
     }
 
+    @SubscribeEvent
+    public void registerRenderers(EntityRenderersEvent.RegisterRenderers event){
+        event.registerEntityRenderer(ModEntities.BLACKJACK_PLAYER_CHAIR_ENTITY.get(), BlackJackPlayerChairRenderer::new);
+    }
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
