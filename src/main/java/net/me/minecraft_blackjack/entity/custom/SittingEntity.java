@@ -12,13 +12,11 @@ public class SittingEntity extends Entity {
 
     public SittingEntity(EntityType<?> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        blackjack.LOGGER.error("STWORZONO SKURWYSYNA");
     }
 
     @Override
     public void kill() {
         super.kill();
-        blackjack.LOGGER.error("ZABITO SKURWYSYNA");
     }
 
     @Override
