@@ -1,5 +1,6 @@
 package net.me.minecraft_blackjack.entity.custom;
 
+import net.me.minecraft_blackjack.blackjack;
 import net.me.minecraft_blackjack.block.custom.BlackJackPlayerChair;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -11,23 +12,32 @@ public class SittingEntity extends Entity {
 
     public SittingEntity(EntityType<?> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
+        blackjack.LOGGER.error("STWORZONO SKURWYSYNA");
     }
 
+    @Override
+    public void kill() {
+        super.kill();
+        blackjack.LOGGER.error("ZABITO SKURWYSYNA");
+    }
 
     @Override
     public void tick() {
-        super.tick();
-        if(!((this.level().getBlockState(this.blockPosition())).getBlock() instanceof BlackJackPlayerChair)){
-            kill();
-        }
-        if(this.getPassengers().isEmpty()){
-            kill();
-        }
-        for(Entity passengers : this.getPassengers()){
-            if(passengers.isShiftKeyDown()){
-                passengers.stopRiding();
+        if(!this.level().isClientSide() ) {
+            if (!((this.level().getBlockState(this.blockPosition())).getBlock() instanceof BlackJackPlayerChair)) {
+                kill();
+            }
+            if (this.getPassengers().isEmpty()) {
+                kill();
+            }
+            for (Entity passengers : this.getPassengers()) {
+                if (passengers.isShiftKeyDown()) {
+                    passengers.stopRiding();
+                    kill();
+                }
             }
         }
+        super.tick();
     }
 
     @Override

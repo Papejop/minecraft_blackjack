@@ -2,6 +2,7 @@ package net.me.minecraft_blackjack.block.custom;
 
 
 import net.me.minecraft_blackjack.entity.ModEntities;
+import net.me.minecraft_blackjack.entity.custom.SittingEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;
@@ -32,7 +33,7 @@ public class BlackJackPlayerChair extends Block {
     protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHitResult) {
         if(!pLevel.isClientSide()){
             ServerLevel level =(ServerLevel) pLevel;
-                Entity chairEntity = ModEntities.BLACKJACK_PLAYER_CHAIR_ENTITY.get().create(level);
+                SittingEntity chairEntity = ModEntities.BLACKJACK_PLAYER_CHAIR_ENTITY.get().create(level);
                 chairEntity.setPos(pPos.getX()+0.5f,pPos.getY(),pPos.getZ()+0.5f);
                 level.addFreshEntity(chairEntity);
                 pPlayer.startRiding(chairEntity);
