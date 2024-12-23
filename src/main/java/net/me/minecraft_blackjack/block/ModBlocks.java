@@ -23,7 +23,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACKJACK_PLAYER_TABLE = registerBlock("blackjack_player_table", 
         () -> new BlackJackPlayerTableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryObject<Block> BLACKJACK_PLAYER_CHAIR = registerBlock("blackjack_player_chair",
-        () -> new BlackJackPlayerChair(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
+        () -> new BlackJackPlayerChair(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion().noLootTable()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
