@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "table trim",
-		"2": "texture",
-		"3": "blackjack table legs",
-		"particle": "table trim"
+		"1": "minecraft_blackjack:block/table_trim",
+		"2": "minecraft_blackjack:block/texture",
+		"3": "minecraft_blackjack:block/blackjack_table_legs",
+		"particle": "minecraft_blackjack:block/table_trim"
 	},
 	"elements": [
 		{
@@ -128,23 +128,33 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"scale": [0.261, 0.261, 0.261]
+		  "rotation": [12, 21, 0],
+		  "translation": [0, 0.5, 0],
+		  "scale": [0.4, 0.4, 0.4]
 		},
 		"thirdperson_lefthand": {
-			"scale": [0.261, 0.261, 0.261]
+		  "rotation": [12, -21, 0],
+		  "translation": [0, 0.5, 0],
+		  "scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_righthand": {
-			"scale": [0.43, 0.43, 0.43]
-		},
-		"firstperson_lefthand": {
-			"scale": [0.43, 0.43, 0.43]
+		  "rotation": [-20, 50, 0],
+		  "translation": [3, 1, 0],
+		  "scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
-			"scale": [0.5, 0.5, 0.5]
+		  "scale": [0.4, 0.4, 0.4]
 		},
 		"gui": {
-			"rotation": [38, -47, 0],
-			"scale": [0.5, 0.5, 0.5]
+		  "rotation": [27.79, 22.65, -11.5],
+		  "translation": [0.75, 2.25, 0],
+		  "scale": [0.7, 0.7, 0.7]
+		},
+		"head": {
+		  "translation": [0, 8.5, 0]
+		},
+		"fixed": {
+		  "rotation": [-90, 0, 0]
 		}
 	},
 	"groups": [
@@ -156,7 +166,7 @@
 		},
 		4,
 		{
-			"name": "group",
+			"name": "group1",
 			"origin": [0, 12, 0],
 			"color": 0,
 			"children": [5, 6, 7, 8]

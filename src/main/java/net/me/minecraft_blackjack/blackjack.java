@@ -129,6 +129,7 @@ public class blackjack
             event.accept(ModItems.CHIP_100);
 
             event.accept(ModBlocks.BLACKJACK_PLAYER_CHAIR);
+            event.accept(ModBlocks.BLACKJACK_PLAYER_TABLE);
         }
     }
 

@@ -82,6 +82,7 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModItems.CHIP_100.get());
         //custom blocks
             pOutput.accept(ModBlocks.BLACKJACK_PLAYER_CHAIR.get());
+            pOutput.accept(ModBlocks.BLACKJACK_PLAYER_TABLE.get());
 
         })
         .build());
