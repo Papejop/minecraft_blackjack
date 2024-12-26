@@ -5,6 +5,7 @@ import java.util.function.Supplier;
 import net.me.minecraft_blackjack.blackjack;
 import net.me.minecraft_blackjack.block.custom.BlackJackPlayerChair;
 import net.me.minecraft_blackjack.block.custom.BlackJackPlayerTableBlock;
+import net.me.minecraft_blackjack.block.custom.OneArmedBanditBlock;
 import net.me.minecraft_blackjack.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,7 +17,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, blackjack.MODID);
 
@@ -24,6 +24,8 @@ public class ModBlocks {
         () -> new BlackJackPlayerTableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryObject<Block> BLACKJACK_PLAYER_CHAIR = registerBlock("blackjack_player_chair",
         () -> new BlackJackPlayerChair(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion().noLootTable()));
+    public static final RegistryObject<Block> ONE_ARMED_BANDIT_BLOCK = registerBlock("one_armed_bandit_block",
+        () -> new OneArmedBanditBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion().noLootTable()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

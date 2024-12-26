@@ -18,6 +18,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlock(ModBlocks.BLACKJACK_PLAYER_TABLE.get(),
             new ModelFile.UncheckedModelFile(modLoc("block/blackjack_player_table")));
+        simpleBlock(ModBlocks.ONE_ARMED_BANDIT_BLOCK.get(),
+            new ModelFile.UncheckedModelFile(modLoc("block/casino_block")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

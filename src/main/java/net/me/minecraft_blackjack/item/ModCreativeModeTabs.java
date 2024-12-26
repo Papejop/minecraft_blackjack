@@ -84,6 +84,8 @@ public class ModCreativeModeTabs {
             pOutput.accept(ModBlocks.BLACKJACK_PLAYER_CHAIR.get());
             pOutput.accept(ModBlocks.BLACKJACK_PLAYER_TABLE.get());
 
+            pOutput.accept(ModBlocks.ONE_ARMED_BANDIT_BLOCK.get());
+
         })
         .build());
 

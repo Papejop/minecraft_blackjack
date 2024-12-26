@@ -61,5 +61,8 @@
     "item.minecraft_blackjack.chip_100": "The 100 Chip",
 
     "block.minecraft_blackjack.blackjack_player_chair": "Player Chair",
-    "block.minecraft_blackjack.blackjack_player_table": "Player Table"
+    "block.minecraft_blackjack.blackjack_player_table": "Player Table",
+    "block.minecraft_blackjack.one_armed_bandit_block": "One Armed bandit",
+
+    "sounds.minecraft_blackjack.one_armed_bandit_block_hit": "One Armed Bandit Block hit"
 }

@@ -1,0 +1,8 @@
+{
+    "one_armed_bandit_block_hit": {
+      "subtitle": "sounds.minecraft_blackjack.one_armed_bandit_block_hit",
+      "sounds": [
+        "minecraft_blackjack:one_armed_bandit_block_hit"
+      ]
+    }
+  } 

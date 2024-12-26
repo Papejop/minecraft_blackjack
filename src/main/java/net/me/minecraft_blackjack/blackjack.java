@@ -21,6 +21,7 @@ import net.me.minecraft_blackjack.item.ModCreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.me.minecraft_blackjack.block.ModBlocks;
 import net.me.minecraft_blackjack.block.entity.ModBlockEntities;
+import net.me.minecraft_blackjack.sound.ModSounds;
 // The value here should match an entry in the META-INF/mods.toml file+
 @Mod(blackjack.MODID)
 public class blackjack
@@ -39,6 +40,7 @@ public class blackjack
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
 
@@ -130,6 +132,7 @@ public class blackjack
 
             event.accept(ModBlocks.BLACKJACK_PLAYER_CHAIR);
             event.accept(ModBlocks.BLACKJACK_PLAYER_TABLE);
+            event.accept(ModBlocks.ONE_ARMED_BANDIT_BLOCK);
         }
     }
 

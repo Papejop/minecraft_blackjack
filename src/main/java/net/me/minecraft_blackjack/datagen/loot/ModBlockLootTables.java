@@ -16,6 +16,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.BLACKJACK_PLAYER_TABLE.get());
+        this.dropSelf(ModBlocks.ONE_ARMED_BANDIT_BLOCK.get());
     }
 
 
